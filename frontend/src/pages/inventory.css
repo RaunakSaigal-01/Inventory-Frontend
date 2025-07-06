@@ -1,0 +1,91 @@
+/* inventory.css */
+
+.inventory-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.inventory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.inventory-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.inventory-add-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.inventory-add-button:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.inventory-form-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.inventory-search-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.inventory-search-input {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  width: 100%;
+}
+
+.inventory-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.inventory-summary-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.summary-value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.summary-value.blue {
+  color: #3b82f6;
+}
+
+.summary-value.green {
+  color: #10b981;
+}
+
+.summary-value.red {
+  color: #ef4444;
+}

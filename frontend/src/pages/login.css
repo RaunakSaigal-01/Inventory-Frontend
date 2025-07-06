@@ -1,0 +1,95 @@
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  padding: 1rem;
+}
+
+.login-box {
+  display: flex;
+  max-width: 1024px;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  gap: 2.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.login-image-section {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .login-image-section {
+    display: block;
+    width: 33%;
+  }
+}
+
+.login-image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.login-form-section {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .login-form-section {
+    width: 50%;
+  }
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  text-align: center;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form input {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.login-button {
+  padding: 0.75rem;
+  background-color: #16a34a;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #15803d;
+}

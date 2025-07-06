@@ -1,0 +1,133 @@
+.supplier-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.supplier-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.supplier-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.supplier-search {
+  width: 33%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+}
+
+.supplier-add-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.supplier-add-btn:hover {
+  background-color: #1e40af;
+}
+
+.supplier-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supplier-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.supplier-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.supplier-card:hover {
+  transform: scale(1.05);
+}
+
+.supplier-img-wrapper {
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.supplier-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.supplier-no-img {
+  width: 100%;
+  height: 100%;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.supplier-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(17, 24, 39, 0.8);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.supplier-card:hover .supplier-overlay {
+  opacity: 1;
+}
+
+.supplier-actions {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-btn, .delete-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  transform: scale(1.1);
+}
