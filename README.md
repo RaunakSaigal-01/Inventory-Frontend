@@ -101,10 +101,3 @@ npm run dev```
 3. Employees can view and update inventory, and process sales.
 4. All users can view their profile and update their information.
 
-## Contributing
-
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature/your-feature`
-3. Make your changes and commit them: `git commit -m 'Add your feature'`
-4. Push to the branch: `git push origin feature/your-feature`
-5. Create a pull request
